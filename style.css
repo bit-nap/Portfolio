@@ -77,12 +77,6 @@ section {
   min-height: fit-content;
 }
 
-.section-container {
-  display: flex;
-  gap: 4rem;
-  height: 80%;
-}
-
 /* BUTTONS */
 
 .btn-container {
@@ -114,23 +108,24 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  /* this is only for the section id="profile" so it look CV like*/
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
 
-.section_text {
-  align-self: center;
-  text-align: center;
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.section_text p {
-  font-weight: 600;
-}
-
-.section_text_p2 {
-  font-size: 1.75rem;
+#pfp {
+  border-radius: 100%;
+  display: flex;
+  width: 20rem;
   margin-bottom: 1rem;
 }
 
