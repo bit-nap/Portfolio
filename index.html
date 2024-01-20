@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Norton A. Perez</div>
+        <div>
+            <ul class="nav-bar">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_text">
+            <p>Hello, I'm</p>
+            <h1>Norton Andres Perez</h1>
+            <p class="section_text_p2">Software developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color1" onclick="window.open('./assets/resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color1" onclick="location.href='./#contact'">
+                    Contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/norton-a-perez/'" />
+                <img src="./assets/github.png" alt="Github profile" class="icon"
+                    onclick="location.href='https://github.com/bit-nap'" />
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">browse my recent</p>
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-box">
+                <h2>RSA encrypted messages</h2>
+                <div class="btn-container">
+                    <button class="btn" onclick="location.href='https://github.com/'" disabled>
+                        Github
+                    </button>
+                    <button class="btn project-btn" onclick="location.href='projects/RSA/encryptMessages.html'">
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <h2>Digit Recognizer AI Challenge</h2>
+                <div class="btn-container">
+                    <button class="btn project-btn"
+                        onclick="location.href='https://github.com/bit-nap/CSCI.331-Digit-Recognizer'">
+                        Github
+                    </button>
+                    <button class="btn" onclick="location.href=''" disabled>
+                        Demo
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <h2>Qbert AI agent</h2>
+                <div class="btn-container">
+                    <button class="btn" onclick="location.href=''" disabled>
+                        Github
+                    </button>
+                    <button class="btn" onclick="location.href=''" disabled>
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">get in touch</p>
+        <h1>Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:nap1118@rit.edu">nap1118@rit.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/norton-a-perez/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div>
+                <ul class="nav-bar">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p id="copyright">Copyright &#169; All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
