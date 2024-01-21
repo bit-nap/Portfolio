@@ -2,6 +2,30 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root[theme="dark"] {
+  background-color: rgb(13, 17, 23);
+  --theme-btn-color: white;
+  --paragraph-color: rgb(214, 214, 214);
+  --header-color: white;
+  --img-bright: brightness(0.75);
+  --img-theme: invert(100%);
+  --a-color: white;
+  --a-color-hover: rgb(181, 181, 181);
+  --a-decoration-color: grey;
+}
+
+:root[theme="light"] {
+  background-color: white;
+  --theme-btn-color: rgb(13, 17, 23);
+  --paragraph-color: rgb(85, 85, 85);
+  --header-color: black;
+  --img-bright: brightness(1);
+  --img-theme: invert(0%);
+  --a-color: black;
+  --a-color-hover: grey;
+  --a-decoration-color: rgb(181, 181, 181);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +39,12 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--header-color);
+}
+
 h1 {
   font-size: 3rem;
   text-align: center;
@@ -22,11 +52,10 @@ h1 {
 
 h2 {
   margin: 1rem;
-  color: black;
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--paragraph-color);
   text-align: center;
 }
 
@@ -34,9 +63,10 @@ p {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 17vh;
+  padding: 0rem 10rem;
 }
 
 .nav-bar {
@@ -47,20 +77,20 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--a-color);
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: var(--a-color-hover);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: var(--a-decoration-color);
 }
 
 .logo {
   font-size: 2rem;
+  color: var(--header-color);
 }
 
 .logo:hover {
@@ -96,6 +126,7 @@ section {
 .btn-color1 {
   border: rgb(53, 53, 53) 0.1rem solid;
   background: none;
+  color: var(--theme-btn-color);
 }
 
 .btn-color1:hover {
@@ -106,10 +137,18 @@ section {
 }
 
 .theme-switch {
-  border: rgb(53, 53, 53) 0.4rem solid;
+  color: var(--theme-btn-color);
+  background: transparent;
+  border: var(--theme-btn-color) 0.4rem solid;
 }
+
 .theme-switch:hover {
-  background: rgb(53, 53, 53);
+  background-color: var(--theme-btn-color);
+  color: var(--theme-btn-color);
+}
+
+#colorMode {
+  cursor: pointer;
 }
 
 /* PROFILE SECTION */
@@ -134,6 +173,7 @@ section {
   display: flex;
   width: 20rem;
   margin-bottom: 1rem;
+  filter: var(--img-bright);
 }
 
 #socials-container {
@@ -148,6 +188,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  filter: var(--img-theme);
 }
 
 /* PROJECTS */
@@ -161,7 +202,7 @@ section {
 }
 
 .project-box {
-  border: 2px solid black;
+  border: 2px solid var(--header-color);
   border-radius: 2rem;
   padding: 1rem 4rem 1rem 4rem;
   margin: 1rem;

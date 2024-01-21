@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
 </head>
 
 <body>
     <nav>
         <div class="logo">Norton A. Perez</div>
-        <div class="btn-container">
-            <button class="btn theme-switch"></button>
+        <div style="position: absolute; left: 50%; transform: translate(-50%, 0%);">
+            <button class="btn theme-switch" id="colorMode">Theme</button>
         </div>
         <div>
             <ul class="nav-bar">
@@ -57,7 +56,7 @@
                     <button class="btn" onclick="location.href='https://github.com/'" disabled>
                         Github
                     </button>
-                    <button class="btn" onclick="location.href='projects/RSA/encryptMessages.html'" disabled>
+                    <button class="btn project-btn" onclick="location.href='projects/RSA/encryptMessages.html'">
                         Demo
                     </button>
                 </div>
@@ -107,7 +106,7 @@
 
     <footer>
         <nav>
-            <div>
+            <div style="position: absolute; left: 50%; transform: translate(-50%, -50%);">
                 <ul class="nav-bar">
                     <li><a href="#top">Home</a></li>
                     <li><a href="#projects">Projects</a></li>

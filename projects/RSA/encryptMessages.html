@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
+    <nav>
         <div>
-            <h1 class="title">RSA messenger</h1>
+            <h1>RSA messenger</h1>
             <div style="display: flex; flex-direction: row;">
                 <p>&nbsp;&nbsp;&nbsp; by &nbsp;&nbsp;
                     <a href="../../index.html">
@@ -19,6 +19,9 @@
                     </a>
                 </p>
             </div>
+        </div>
+        <div style="position: absolute; left: 50%; transform: translate(-50%, 0%);">
+            <button class="btn theme-switch" id="colorMode">Theme</button>
         </div>
         <div>
             <ul class="nav-bar">
@@ -29,12 +32,18 @@
     </nav>
 
     <section id="program">
-        <div>TODO: program</div>
+        <div>
+            <p>TODO: program</p>
+        </div>
     </section>
 
     <section id="info">
-        <div>TODO: info</div>
-        <div>IDEA: make a green/red indicator for when the server is online. If offline, do it locally w/ files</div>
+        <div>
+            <p>TODO: info</p>
+        </div>
+        <div>
+            <p>IDEA: make a green/red indicator for when the server is online. If offline, do it locally w/ files</p>
+        </div>
     </section>
 
     <footer>
@@ -43,8 +52,9 @@
                 <p>For any issues reach me through <a href="mailto:nap1118@rit.edu"><b>email</b></a></p>
             </div>
             <nav>
-                <div>
+                <div style="position: absolute; left: 50%; transform: translate(-50%, -50%);">
                     <ul class="nav-bar">
+                        <li><a href="../../index.html">Home</a></li>
                         <li><a href="#program">Program</a></li>
                         <li><a href="#info">Info</a></li>
                     </ul>
