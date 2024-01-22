@@ -26,5 +26,5 @@ function changeBackground() {
   }
   rootElem.setAttribute("theme", newTheme);
   localStorage.setItem("colorMode", newTheme);
-  console.log(newTheme);
+  // console.log(newTheme);
 }

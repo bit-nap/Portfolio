@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" theme="light">
+<html lang="en" theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSA algorithm messaging client</title>
     <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="RSA.css" />
 </head>
 
 <body>
@@ -32,17 +33,33 @@
     </nav>
 
     <section id="program">
-        <div>
-            <p>TODO: program</p>
+        <div class="program-container">
+            <p>SHOWCASE</p>
         </div>
     </section>
 
     <section id="info">
-        <div>
-            <p>TODO: info</p>
+        <div class="program-info">
+            <p>NOTE: this page is currently being worked on to add a functional demo.</p>
+            <p>
+                The demo will send messages to the server. If the server is offline, the messaging will be done locally.
+            </p>
         </div>
-        <div>
-            <p>IDEA: make a green/red indicator for when the server is online. If offline, do it locally w/ files</p>
+        <div class="program-description">
+            <h2>Description</h2>
+            <p style="padding: 0rem 1rem;">RSA algorithm is an asymmetric cryptography algorithm. This means that for
+                RSA we need two keys: public
+                and private. To generate these keys you will need a p and q value, which are both prime. To ensure the
+                security of RSA, it is necessary to use large prime numbers. </p>
+            <div style="padding: 1rem 1rem;">
+                <h3>Formulas</h3>
+                <p>N = p * q</p>
+                <p>r = (p - 1) * (q - 1)</p>
+                <p>E = a prime numbers</p>
+                <p>D = E <sup>-1</sup> mod r &nbsp;&nbsp;&#8801;&nbsp;&nbsp; D * E = 1 mod r</p>
+                <p>public key = (e,N)</p>
+                <p>private key = (D,N)</p>
+            </div>
         </div>
     </section>
 

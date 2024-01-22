@@ -1,0 +1,36 @@
+.program-container {
+  display: flex;
+  border: rgb(53, 53, 53) 0.2rem solid;
+  border-radius: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-info {
+  border: rgb(53, 53, 53) 0.2rem solid;
+  border-radius: 2rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  flex: 1;
+  font-size: x-large;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.program-description {
+  border: rgb(53, 53, 53) 0.2rem solid;
+  border-radius: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  flex: 1;
+  text-align: left;
+  font-size: xx-large;
+  padding: 2rem;
+}
