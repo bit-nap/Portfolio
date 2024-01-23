@@ -26,34 +26,57 @@
   --a-decoration-color: rgb(181, 181, 181);
 }
 
-/* desktop (and above) styling */
-@media (max-width: 4000px) {
+/* Desktop styling */
+@media (min-width: 1024px) {
   nav {
     font-size: 2rem;
     padding: 0rem 10rem;
   }
+  .project-box {
+    width: -webkit-fill-available;
+    flex-direction: row;
+  }
 }
 
-/* tablet styling */
-@media (max-width: 1200px) {
+/* Tablet styling */
+@media (max-width: 1024px) {
   nav {
     padding: 0rem 5rem;
   }
+  .logo {
+    font-size: 2rem;
+  }
+  .nav-bar-container {
+    display: none;
+  }
+  .project-box {
+    flex-direction: column;
+  }
 }
 
-/* phones styling */
-@media (max-width: 900px) {
-  body {
-    width: -webkit-fill-available;
+@media (max-width: 760px) {
+  nav {
+    padding: 0rem 1rem;
   }
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile styling */
+@media (max-width: 480px) {
   nav {
     width: -webkit-fill-available;
+    padding: 0rem 0.5rem;
   }
   .logo {
     font-size: 1rem;
   }
   .nav-bar-container {
     display: none;
+  }
+  .project-box {
+    flex-direction: column;
   }
 }
 
@@ -64,6 +87,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 html {
@@ -239,7 +263,6 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: -webkit-fill-available;
   justify-content: space-evenly;
 }
 
@@ -250,7 +273,6 @@ section {
   margin: 1rem;
   display: flex;
   align-items: center;
-  width: -webkit-fill-available;
   justify-content: space-between;
 }
 
