@@ -11,10 +11,10 @@
 <body>
     <nav>
         <div class="logo">Norton A. Perez</div>
-        <div style="position: absolute; left: 50%; transform: translate(-50%, 0%);">
+        <div class="theme-container">
             <button class="btn theme-switch" id="colorMode">Theme</button>
         </div>
-        <div>
+        <div class="nav-bar-container">
             <ul class="nav-bar">
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -28,7 +28,7 @@
             <img id="pfp" src="assets/temp-pfp.jpg" alt="profile picture">
             <p>Hello, I'm</p>
             <h1>Norton Andres Perez</h1>
-            <p style="font-size: 2rem; margin-bottom: 1rem;">Software developer</p>
+            <p class="profession-p">Software developer</p>
             <div class="btn-container">
                 <button class="btn btn-color1" onclick="window.open('./assets/resume.pdf')">
                     Download CV
@@ -47,7 +47,7 @@
     </section>
 
     <section id="projects">
-        <p style="text-align: center;">browse my recent</p>
+        <p class="pretitle-p">browse my recent</p>
         <h1>Projects</h1>
         <div class="projects-container">
             <div class="project-box">
@@ -90,7 +90,7 @@
     </section>
 
     <section id="contact">
-        <p style="text-align: center;">get in touch</p>
+        <p class="pretitle-p">get in touch</p>
         <h1>Contact me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
@@ -106,7 +106,7 @@
 
     <footer>
         <nav>
-            <div style="position: absolute; left: 50%; transform: translate(-50%, -50%);">
+            <div class="footer-nav">
                 <ul class="nav-bar">
                     <li><a href="#top">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
