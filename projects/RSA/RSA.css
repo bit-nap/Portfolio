@@ -1,3 +1,72 @@
+/* 1025px and more: Desktop styling */
+@media (min-width: 1025px) {
+  .program-container {
+    padding: 23rem;
+  }
+  .program-info {
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .program-description {
+    font-size: 1.9rem;
+    padding: 2rem;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops styling */
+@media (max-width: 1024px) {
+  .program-container {
+    padding: 15rem;
+  }
+  .program-info {
+    font-size: x-large;
+  }
+  .program-description {
+    font-size: x-large;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets styling */
+@media (max-width: 768px) {
+  #program {
+    height: 30vh;
+  }
+  #info{
+    height: 70vh;
+  }
+  .program-container {
+    padding: 6rem;
+  }
+  .program-info {
+    font-size: 0.8rem;
+  }
+  .program-description {
+    font-size: 1rem;
+  }
+}
+
+/* 320px — 480px: Mobile devices styling */
+@media (max-width: 480px) {
+  #program {
+    height: 30vh;
+  }
+  #info{
+    height: 68vh;
+  }
+  .program-container {
+    padding: 5rem;
+  }
+  .program-info {
+    font-size: 0.8rem;
+    margin: 0rem 1rem;
+  }
+  .program-description {
+    font-size: 1rem;
+    margin: 0rem 1rem;
+  }
+}
+
 .program-container {
   display: flex;
   border: rgb(53, 53, 53) 0.2rem solid;
@@ -5,8 +74,6 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
   justify-content: center;
   align-items: center;
 }
@@ -14,23 +81,17 @@
 .program-info {
   border: rgb(53, 53, 53) 0.2rem solid;
   border-radius: 2rem;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  flex: 1;
-  font-size: x-large;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .program-description {
   border: rgb(53, 53, 53) 0.2rem solid;
   border-radius: 2rem;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  flex: 1;
   text-align: left;
-  font-size: xx-large;
-  padding: 2rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.program-description > h3 {
+  padding: 1rem 0rem 0rem 0rem;
 }
