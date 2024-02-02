@@ -1,7 +1,11 @@
 /* 1025px and more: Desktop styling */
 @media (min-width: 1025px) {
-  .program-container {
-    padding: 23rem;
+  #program {
+    margin: 2rem 0rem;
+  }
+  video {
+    width: 120vh;
+    border-radius: 1rem;
   }
   .program-info {
     font-size: 1.5rem;
@@ -16,8 +20,11 @@
 
 /* 769px — 1024px: Small screens, laptops styling */
 @media (max-width: 1024px) {
-  .program-container {
-    padding: 15rem;
+  #program {
+    margin: 2rem 0rem;
+  }
+  video {
+    width: 80vh;
   }
   .program-info {
     font-size: x-large;
@@ -29,14 +36,15 @@
 
 /* 481px — 768px: iPads, Tablets styling */
 @media (max-width: 768px) {
-  #program {
-    height: 30vh;
-  }
-  #info{
+  #info {
     height: 70vh;
   }
-  .program-container {
-    padding: 6rem;
+  #program {
+    height: 30vh;
+    margin: 2rem 0rem;
+  }
+  video {
+    width: 80vw;
   }
   .program-info {
     font-size: 0.8rem;
@@ -51,11 +59,14 @@
   #program {
     height: 30vh;
   }
-  #info{
+  #info {
     height: 68vh;
   }
-  .program-container {
-    padding: 5rem;
+  #program {
+    margin: 2rem 0rem;
+  }
+  video {
+    width: 80vw;
   }
   .program-info {
     font-size: 0.8rem;
@@ -68,6 +79,7 @@
 }
 
 .program-container {
+  padding: 2vh;
   display: flex;
   border: rgb(53, 53, 53) 0.2rem solid;
   border-radius: 2rem;

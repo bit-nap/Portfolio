@@ -30,7 +30,7 @@
     font-size: 2rem;
     padding: 0rem 7rem 0rem 10rem;
   }
-  .btn{
+  .btn {
     width: 10rem;
   }
   section {
@@ -63,7 +63,7 @@
   nav {
     padding: 0rem 5rem;
   }
-  .btn{
+  .btn {
     width: 8rem;
   }
   .logo {
@@ -133,7 +133,7 @@
     width: -webkit-fill-available;
     padding: 0rem 0.5rem;
   }
-  .btn{
+  .btn {
     width: 6rem;
   }
   .logo {
@@ -310,6 +310,23 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.pfp-container {
+  position: relative;
+}
+
+.main-pfp {
+  z-index: 10;
+  transition: all 500ms ease;
+}
+.main-pfp:hover {
+  opacity: 0;
+}
+
+.sub-pfp {
+  top: 0;
+  position: absolute;
 }
 
 #pfp {
